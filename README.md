@@ -46,7 +46,11 @@ Der Spieler bewegt sich in Y-Richtung durch die Variable Geschwindigkeit y und i
 
 ![Repeat Schritte](https://user-images.githubusercontent.com/88385824/163691650-a56c8437-7f19-4e36-9d10-958d2f2cd01c.PNG)
 
+Die Kontrolle wie oft der Untergrund berührt wird, passiert durch die Variable "Schritte" die so definiert ist:
+
 ![Schirtte definiert](https://user-images.githubusercontent.com/88385824/163691660-9573bdd4-2402-423e-9946-77ec2bf6c7e6.PNG)
+
+
 
 ![Auf Untergrund stehen](https://user-images.githubusercontent.com/88385824/163691669-ef1f2233-aa67-49e4-8b64-3bbb83fd47e1.PNG)
 
