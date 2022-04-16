@@ -6,7 +6,7 @@
 
 * [Aufbau des Spiels](#AufbaudesSpiels)
   * [Spielidee](#Spielidee)
-  * [Steuerung](#Steuerung)
+  * [Grundkonzept und Steuerung](#Steuerung)
   
  
 * [verschiedene Level](#verschiedeneLevel)
@@ -37,4 +37,7 @@ Bei unserem Spiel handelt es sich um ein Jump 'n' Run. Als Jump'n' Run bzeichet 
 
 *Beispiel für ein Hindernis*
 
+### Grundkonzept des Spiels
+Zu Beginn des Spiel erscheint der Spieler, ein lila Quadrat, im ersten Level. Der Untergrund ist grün und er kann sich auf diesem nach links und rechts in  + und - X-Richtung  bewegen. Außerdem kann er durch Sprünge auch in Y- Richtung bewegt werden. Nach kurzer Zeit landet er, wie im echten Leben auch wieder auf dem Untergrund. 
 
+Der Spieler bewegt sich in Y-Richtung durch die Variable Geschwindigkeit y und in X-Richtung durch die Variable Geschwindigkeit x. Der Spieler fällt zu Beginn des Spiels auf den Boden, da die Geschwindigkeit y durch durch die Schwerkraft verändert wird. Die Schwerkraft ist auf -1 gesetzt. Das hat zur Folge , dass bei einem Sprung als einer Erhörung der Geschwindigkeit y, die Varible konstant um -1 veringert wird. Wodruch man bei einem längeren Fall beschleunigt und zum Ende schneller fällt. Um den Spieler beim berühren des grünen Untergrundes zu stoppen verwendet wird einen eigenen BLock der sich "Bewegung in Schritten", der Vorteil bei eigenen Blöcken in Scratch ist, dass man die Funktion "Run without screen refresh" nutzen kann, wodurch der Code in einem Frame abläuft und man die einzelnen Schritte nicht sieht. 
