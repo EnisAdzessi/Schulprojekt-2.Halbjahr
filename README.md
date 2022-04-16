@@ -69,7 +69,7 @@ Der Spieler bewegt sich nach der Variable Geschwindigkeit x nach rechts und link
 
 ![in pace x bewegen](https://user-images.githubusercontent.com/88385824/163694647-7501bb66-43c9-41dd-a3b1-7e4dc52fce56.PNG)
 
-Wie auch bei der Geschwindigkeit y ergibt si nach der gesamten Distanz, die man sich bewegt durch die Anzahl der Schritte geteilt.
+Wie auch bei der Geschwindigkeit y ergibt sich die X-Koordinate, wenn nach die gesamten Distanz, die man sich bewegt durch die Anzahl der Schritte teilt.
 
 
 
