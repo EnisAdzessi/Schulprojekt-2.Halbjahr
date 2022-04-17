@@ -222,7 +222,7 @@ Der Lebensbalken zeigt ann wie viel Leben der Gegnerspawner noch hat. Das Leben 
 ![Lebensbalken script](https://user-images.githubusercontent.com/88385824/163725585-68766422-04e4-49b3-b57a-6bc133bd5436.PNG)
 
 #### Spawner
-Der Spawner erschafft die Gegner und tut dies solange bis er zerstört wird. Das Leben des Spawners wird durch die Lebensbalken reguliert. Und der Spawner verscwhindet sobald seine Leben 0 sind. Der Spieler kann den Spawner nur mit der Waffe zerstören, indem die Schussprojektile des Spawner treffen. 
+Der Spawner erschafft die Gegner und tut dies solange bis er zerstört wird. Das Leben des Spawners wird durch den Lebensbalken reguliert. Und der Spawner verschwindet sobald seine Leben 0 sind. Der Spieler kann den Spawner nur mit der Waffe zerstören, indem die Schussprojektile den Spawner treffen. 
 
 ![Spawner Bild](https://user-images.githubusercontent.com/88385824/163728609-2e9deb50-dcab-476b-a914-583b8be2aaf7.PNG)
 
