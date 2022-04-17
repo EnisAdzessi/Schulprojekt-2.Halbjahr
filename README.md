@@ -148,8 +148,7 @@ Wenn der Spieler sich zum äußeren Rand im positiver X-Richtung befindet, dann 
 
 ![gb3twbwz](https://user-images.githubusercontent.com/88385824/163711110-a6a6ac05-7d26-470f-968c-c3e4ba2a46ee.gif)
 
-Hierfür wird die ganze Zeit die Message " Letze Position im Hintergrund gebroadcastet. Diese prüft, ob die X Position des Spieler größer ist als 235, weil dies der äußerste Rand ist. Sobald dies der Fall ist wird die X Koordinate auf -235, damit sich der Spieler am äußersten Rand in - X-Richtung ist. Außerdem wird die Hintergrund # um einen erhöhrt. Dies sorgt dafür, dass das zweite Level gezeigt wird und das erste verschwindet. 
-
+Hierfür wird die ganze Zeit die Message "Letzte Position im Hintergrund" gebroadcastet. Diese prüft, ob die X Position des Spieler größer ist als 235, weil dies der äußerste Rand ist. Sobald dies der Fall ist wird die X Koordinate auf -235 gesetzt, damit sich der Spieler am äußersten Rand in -X-Richtung ist. Außerdem wird die Variable Hintergrund # um einen erhöhrt. Dies sorgt dafür, dass das zweite Level gezeigt wird und das erste verschwindet. 
 
 ![Letze Position im Hintergrund](https://user-images.githubusercontent.com/88385824/163711431-28f5885c-989c-44f9-aea7-9ed3cfe6e331.PNG)
 
