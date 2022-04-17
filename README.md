@@ -123,15 +123,39 @@ Der Gegnern bewegt sich zwischen zwei grünen Wänden und macht dem Spieler Scha
 
 ![rechts links bewegen Gegner](https://user-images.githubusercontent.com/88385824/163710510-5f5de3a7-0064-4fbd-ab17-76400bbadffb.PNG)
 
+Der Gegner berührt den Boden nicht wirklich, wodurch es dort zu keinen Problem kommt. 
+
 ![Schaden an Spieler](https://user-images.githubusercontent.com/88385824/163710511-5c5ea373-6501-4b23-a19d-d48589489b18.PNG)
 
-![Forever loop Gegner](https://user-images.githubusercontent.com/88385824/163710513-11951551-c83d-4bd6-9c5d-5133296a88ad.PNG)
-
-
+![Forever loop Gegnerr](https://user-images.githubusercontent.com/88385824/163710550-06c46984-b059-4f9c-8d8c-47accfcde34e.PNG)
 
 #### Stacheln
+Bei den Stacheln handelt es sich um eine Hindernis, die dem Spieler Schaden hinzufügen, sobald er diese berührt.
+
+![Stacheln](https://user-images.githubusercontent.com/88385824/163710925-5dfcdb56-9075-47b0-9df1-142896106db6.PNG)
+
+![stacheln dmg an ply](https://user-images.githubusercontent.com/88385824/163710926-1ed6c55a-528a-40a4-bd72-32640e00ad8c.PNG)
+
+![stacheln dmg block](https://user-images.githubusercontent.com/88385824/163710927-f0652ab0-a64a-4a43-b96c-6c66898a28c5.PNG)
+
+![Aus Stacheln kommen#](https://user-images.githubusercontent.com/88385824/163710928-5cb12829-1aab-4322-a82d-b1cfb88b2162.PNG)
+
+Damit der Spieler nicht in den Boden einsinkt, wird er bei einem Kontakt mit den Stacheln hochbewegt. Aus dieser Block funktioniert wieder mit der Funktion "Run without screen refresh".
 
 #### Wechsel zum nächsten Level
+
+Wenn der Spieler sich zum äußeren Rand im positiver X-Richtung befindet, dann wird wird der Hintergrund getauscht und er kann direkt weiterlaufen. Die Level sind auch so gebaut, dass er auf der gleichen Ebene bleibt und nicht plözlich in eine Wand läuft. 
+
+![gb3twbwz](https://user-images.githubusercontent.com/88385824/163711110-a6a6ac05-7d26-470f-968c-c3e4ba2a46ee.gif)
+
+Hierfür wird die ganze Zeit die Message " Letze Position im Hintergrund gebroadcastet. Diese prüft, ob die X Position des Spieler größer ist als 235, weil dies der äußerste Rand ist. Sobald dies der Fall ist wird die X Koordinate auf -235, damit sich der Spieler am äußersten Rand in - X-Richtung ist. Außerdem wird die Hintergrund # um einen erhöhrt. Dies sorgt dafür, dass das zweite Level gezeigt wird und das erste verschwindet. 
+
+
+![Letze Position im Hintergrund](https://user-images.githubusercontent.com/88385824/163711431-28f5885c-989c-44f9-aea7-9ed3cfe6e331.PNG)
+
+![Hintergründe](https://user-images.githubusercontent.com/88385824/163711434-091af7b3-9984-4523-b0b8-b95247850d5e.PNG)
+
+![Hintergründe Kostüme](https://user-images.githubusercontent.com/88385824/163711436-0d54c6ff-8171-4c27-b19b-1a8ed252558d.PNG)
 
 ### Level 2
 
