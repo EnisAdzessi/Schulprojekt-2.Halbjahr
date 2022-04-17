@@ -184,6 +184,12 @@ Das Sprungfeld erscheint beim Betretren des Levels und verschwindet, wenn man di
 ![sprungboost hide](https://user-images.githubusercontent.com/88385824/163712940-3603a410-0362-465b-8e70-468cb987d9d8.PNG)
 
 #### Aus der Karte fallen
+In diesem Level kann man aus der Karte fallen fallen. Dies geschieht, wenn man nach Benutzen des Sprundfeldes nicht auf dem grünen Untergrund landet. Der Spieler dann aus der Karte und das Spiel beginnt von vorne. 
+
+
+![aus der map fallen](https://user-images.githubusercontent.com/88385824/163713450-659ff703-82d7-4dc4-ac90-57d67ca750ea.PNG)
+
+Wenn die X-Koordinate des Spielers unter -150 ist und der das zweite Level ausgewählt ist, dann verschwindet der Spieler per "Ghosteffect" und das Spiel wird neu gestartet.
 
 ### Level 3
 
