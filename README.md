@@ -260,16 +260,21 @@ Wenn der Spieler die Tür berührt und den Schlüssel aus Level 5 noch nicht ein
 
 ![Fake Tür](https://user-images.githubusercontent.com/88385824/163731688-be5617a2-02fe-42ae-9010-feb29fc494c6.PNG)
 
-Wie zu erkennen ist dies die eigentliche Tür. Die braune Tür ist kein eigener Sprite und wird vom Spieler auch nicht erkannt. 
+Wie zu erkennen ist, ist dies igentliche Tür. Die braune Tür ist kein eigener Sprite und wird vom Spieler auch nicht erkannt. 
 
 ![Tür ghost effekt](https://user-images.githubusercontent.com/88385824/163731689-56caa960-34f3-41bb-9864-b01d5b58acbb.PNG)
 
 ![Tür schlüssel code](https://user-images.githubusercontent.com/88385824/163731690-0cc2576c-4fcc-44dd-b42f-bd89d7a15e7b.PNG)
 
 #### Wechsel zum Level 5
-Sobald der Spieler den äußersten Rand im postiver Y-Richtung erreicht wird seine Position in die niedrigste Y-Koordinate den nächsten Levels geändert, da sich das fünfte Level über dem vierten befindet. Wenn der Spieler die Y-Koordinate 185 erreicht wird die Hintergrund Variable auf 14 gesetzt, wodurch das fünfte Level ausgewählt ist. Wir wählten die Nummer 14, da wir zunächst mehrere Level machen wählten, die sich über anderen befinden, für diese Level wolletn wir 10 Potenzen benutzen, also 14, 15 etc. , wir schafften alledings  mehr bis zur Fertigstellung.
+Sobald der Spieler den äußersten Rand im postiver Y-Richtung erreicht wird seine Position in die niedrigste Y-Koordinate den nächsten Levels geändert, da sich das fünfte Level über dem vierten befindet. Wenn der Spieler die Y-Koordinate 185 erreicht wird die Hintergrund Variable auf 14 gesetzt, wodurch das fünfte Level ausgewählt ist. Wir wählten die Nummer 14, da wir zunächst mehrere Level machen wählten, die sich über anderen befinden, für diese Level wolletn wir 10 Potenzen benutzen, also 14, 15 etc. , wir schafften allerdings nicht mehr bis zur Fertigstellung.
 
-#### Ende des Spiels
+![Level 5 Hintergrund](https://user-images.githubusercontent.com/88385824/163733401-4ba5558f-4053-4056-a54a-37c7aebd7797.PNG)
+
+![wechsel auf level 45](https://user-images.githubusercontent.com/88385824/163733438-7a5ccf47-ab8b-466a-bd3f-b604cc19fc88.PNG)
+
+#### Gegner
+Der Gegner funktioniert wie in Level 1.
 
 ### Level 5
 
