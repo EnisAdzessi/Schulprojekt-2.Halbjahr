@@ -250,7 +250,21 @@ Die Gegner in diesem Level sehen identisch aus zum Gegner im ersten Level. Aller
 
 ### level 4
 
+![Level 4](https://user-images.githubusercontent.com/88385824/163731469-86f1c3c6-07e5-4101-b7de-84cabd0f3417.PNG)
+
 #### Tür 
+
+Wenn der Spieler die Tür berührt und den Schllüssel aus Level 5 noch nicht eingesammelt hat, kriegt er eine Nachricht, die ihm mitteilt ,dass der Schlüssel fehlt. Sollte der Spieler den Schlüssel eingesammelt haben, wird das Spiel beendet und man kommt zum Siegesmenü in dem man das Spiel neu starten kann. Bei der Tür handelt es sich um einen grünen Block, der durch den Ghosteffect allerdings nicht zu sehen ist. Dieser Block fungiert als Tür und senden die Nachrichten "Ende des Spiels" oder Schlüssel fehlt. 
+
+![Tür](https://user-images.githubusercontent.com/88385824/163731687-a7ac3e1d-6ee8-4946-a946-4c2fb5fc4113.PNG)
+
+![Fake Tür](https://user-images.githubusercontent.com/88385824/163731688-be5617a2-02fe-42ae-9010-feb29fc494c6.PNG)
+
+Wie zu erkennen ist dies die eigentliche Tür. Die braune Tür ist kein eigener Sprite und wird vom Spieler auch nicht erkannt. 
+
+![Tür ghost effekt](https://user-images.githubusercontent.com/88385824/163731689-56caa960-34f3-41bb-9864-b01d5b58acbb.PNG)
+
+![Tür schlüssel code](https://user-images.githubusercontent.com/88385824/163731690-0cc2576c-4fcc-44dd-b42f-bd89d7a15e7b.PNG)
 
 #### Wechsel zum Level 5
 
