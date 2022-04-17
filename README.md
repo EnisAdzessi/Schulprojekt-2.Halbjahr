@@ -260,14 +260,14 @@ Wenn der Spieler die Tür berührt und den Schlüssel aus Level 5 noch nicht ein
 
 ![Fake Tür](https://user-images.githubusercontent.com/88385824/163731688-be5617a2-02fe-42ae-9010-feb29fc494c6.PNG)
 
-Wie zu erkennen ist, ist dies igentliche Tür. Die braune Tür ist kein eigener Sprite und wird vom Spieler auch nicht erkannt. 
+Wie zu erkennen ist, ist dies die eigentliche Tür. Die braune Tür ist kein eigener Sprite und wird vom Spieler auch nicht erkannt. 
 
 ![Tür ghost effekt](https://user-images.githubusercontent.com/88385824/163731689-56caa960-34f3-41bb-9864-b01d5b58acbb.PNG)
 
 ![Tür schlüssel code](https://user-images.githubusercontent.com/88385824/163731690-0cc2576c-4fcc-44dd-b42f-bd89d7a15e7b.PNG)
 
 #### Wechsel zum Level 5
-Sobald der Spieler den äußersten Rand im postiver Y-Richtung erreicht wird seine Position in die niedrigste Y-Koordinate den nächsten Levels geändert, da sich das fünfte Level über dem vierten befindet. Wenn der Spieler die Y-Koordinate 185 erreicht wird die Hintergrund Variable auf 14 gesetzt, wodurch das fünfte Level ausgewählt ist. Wir wählten die Nummer 14, da wir zunächst mehrere Level machen wählten, die sich über anderen befinden, für diese Level wolletn wir 10 Potenzen benutzen, also 14, 15 etc. , wir schafften allerdings nicht mehr bis zur Fertigstellung.
+Sobald der Spieler den äußersten Rand im postiver Y-Richtung erreicht wird seine Position in die niedrigste Y-Koordinate den nächsten Levels geändert, da sich das fünfte Level über dem vierten befindet. Wenn der Spieler die Y-Koordinate 185 erreicht wird die Hintergrund Variable auf 14 gesetzt, wodurch das fünfte Level ausgewählt ist. Wir wählten die Nummer 14, da wir zunächst mehrere Level machen wählten, die sich über anderen befinden, für diese Level wollten wir 10 Potenzen benutzen, also 14, 15 etc. , wir schafften allerdings nicht mehr bis zur Fertigstellung.
 
 ![Level 5 Hintergrund](https://user-images.githubusercontent.com/88385824/163733401-4ba5558f-4053-4056-a54a-37c7aebd7797.PNG)
 
@@ -278,11 +278,29 @@ Der Gegner funktioniert wie in Level 1.
 
 ### Level 5
 
+![Level 5](https://user-images.githubusercontent.com/88385824/163733895-3bd0289e-0ff0-4754-90df-37fe47d44692.PNG)
+
 #### Wechsel zum Level 4
+Der Wechsel funktioniert ähnlich wie der vom Level 4 zu Level 5. 
+
+![Wechsel 5 4](https://user-images.githubusercontent.com/88385824/163734097-32ffc8ef-3cb0-4c32-aadf-62a0dc74c876.PNG)
 
 #### Laser
+Die Laser machen dem Spieler Schaden und erscheinen für eine kurze Zeit. Der Spieler muss im richtigen Moment springen, um nicht getroffen zu werden, da die Laser sehr dem Spieler sehr Leben abziehen. Beim Betreten des level 5 sind sie nicht zu sehen und sieht erst kurz danach zu sehen, was für einen Überraschungsmoment sorgen soll. 
+
+![Laser](https://user-images.githubusercontent.com/88385824/163734385-bf27ffd2-a348-4992-8b2f-c4de7d28e848.PNG)
+
+![Laser Skript](https://user-images.githubusercontent.com/88385824/163734387-bfb48d8a-20bb-4f11-a3fe-2f9c60a7ac32.PNG)
+
+![Laser Schaden an Spieler](https://user-images.githubusercontent.com/88385824/163734388-43070503-00b8-4fc8-9ad8-8d616985c6e3.PNG)
 
 #### Lava
+Die Lava ist das Finale Hindernis vor erreichen des Schlüssels. Wenn der Spieler in die Lava fällt, verliert er seine gesamten Herzen und das Spiel beginnt von vorne. Die Lava steigt und sinkt abwechselnd. Das richtige Skript für die Animation haben wir aus diesem Video https://www.youtube.com/watch?v=IbsV0SJBxm4.
+
+
+![Lava](https://user-images.githubusercontent.com/88385824/163734689-cd53dd2e-270e-4f60-85bf-e5e9f2e743b8.PNG)
+
+![Lava Animation](https://user-images.githubusercontent.com/88385824/163734690-f380bc63-dd24-428a-8b67-0225251b95a0.PNG)
 
 #### Schlüssel
 
