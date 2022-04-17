@@ -39,7 +39,7 @@ Bei unserem Spiel handelt es sich um ein Jump 'n' Run. Als Jump'n' Run bzeichet 
 *Beispiel für ein Hindernis*
 
 ### Grundkonzept und Steuerung 
-Zu Beginn des Spiel erscheint der Spieler, ein lila Quadrat, im ersten Level. Der Untergrund ist grün und er kann sich auf diesem nach links und rechts in  + und - X-Richtung  bewegen. Außerdem kann er durch Sprünge auch in Y- Richtung bewegt werden. Nach kurzer Zeit landet er, wie im echten Leben auch wieder auf dem Untergrund. 
+Zu Beginn des Spiel erscheint der Spieler, ein lila Quadrat, im ersten Level. Wir nutzen als Spieler ein Quadrat, damit die der Bereich in dem der Spieler getroffen werden kann nicht extra programmieren müssen. Bei einem Menschen z.B würden die Arme abstehen und alles wäre nicht nicht in einer geraden Linie. Der Untergrund ist grün und er kann sich auf diesem nach links und rechts in  + und - X-Richtung  bewegen. Außerdem kann er durch Sprünge auch in Y- Richtung bewegt werden. Nach kurzer Zeit landet er, wie im echten Leben auch wieder auf dem Untergrund. 
 
 Der Spieler bewegt sich in Y-Richtung durch die Variable Geschwindigkeit y und in X-Richtung durch die Variable Geschwindigkeit x. Der Spieler fällt zu Beginn des Spiels auf den Boden, da die Geschwindigkeit y durch durch die Schwerkraft verändert wird. Die Schwerkraft ist auf -1 gesetzt. Das hat zur Folge , dass bei einem Sprung als einer Erhörung der Geschwindigkeit y, die Varible konstant um -1 veringert wird. Wodruch man bei einem längeren Fall beschleunigt und zum Ende schneller fällt. Um den Spieler beim Berühren des grünen Untergrunds zu stoppen, verwenden wir einen eigenen Block, der sich "Bewegung in Schritten" nennt, der Vorteil bei eigenen Blöcken in Scratch ist, dass man die Funktion "Run without screen refresh" nutzen kann, wodurch der Code in einem Frame abläuft und man die einzelnen Schritte nicht sieht. 
 
@@ -303,7 +303,14 @@ Die Lava ist das Finale Hindernis vor erreichen des Schlüssels. Wenn der Spiele
 ![Lava Animation](https://user-images.githubusercontent.com/88385824/163734690-f380bc63-dd24-428a-8b67-0225251b95a0.PNG)
 
 #### Schlüssel
+Der Schlüssel ist notwendig um durch die Tür zu kommen und das Spiel zu beenden. Sobald der Spieler den Schlüssel berührt wird dieser eingesammelt und die Schlüssel Variable wird von 0 auf 1 gesetzt. Der Spieler kann nun durch die Tür gehen und das Spiel beenden. Wenn er vom Level 4 ins Level 5 wechselt, nachdem er den Schlüsel eingesammelt hat, ist dieser nicht mehr zu sehen. 
 
-### Ende des Spiels
+![Schlüssel](https://user-images.githubusercontent.com/88385824/163734984-56676c83-ff2c-4507-9e45-3ae89184ac9c.PNG)
+
+![Schlüssel Code](https://user-images.githubusercontent.com/88385824/163734985-20765c21-54e8-42d3-861f-e9954aef5bc1.PNG)
 
 #### Siegesmenü
+Wenn der Spieler den Schlüssel eingesammelt hat und durch die Tür geht hat er das Spiel geschafft. Im Siegesmenü wird ihm gratuliert und er kann das Spiel von vorne starten, indem er auf den "Spiele nochmal" klickt. Wenn der mauszeiger auf diesem befindet ändern sich dessen Farbe.
+
+![gb3twbwz (1)](https://user-images.githubusercontent.com/88385824/163735047-a0490b74-b40c-4b12-bd9b-da3cfe7c7640.gif)
+
