@@ -209,7 +209,7 @@ Der Spieler kann eine Waffe aufsammeln, mit der er den Gegnerspawner und die Geg
 
 
 #### Lebensbalken
-
+Der Lebensbalken zeigt ann wie viel Leben der Gegnerspawner noch hat. Das Leben wird über die Variable "eben gesteuert und der Balken sowie auch der Spawner 
 
 
 #### Spawner
