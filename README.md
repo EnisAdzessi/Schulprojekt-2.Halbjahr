@@ -232,9 +232,21 @@ Der Spawner erschafft die Gegner und tut dies solange bis er zerstört wird. Das
 
 ![Spawner Script 3](https://user-images.githubusercontent.com/88385824/163728615-8a739b0a-2cb5-4f51-815d-1498274a623c.PNG)
 
-
+Diese Nachricht wird vom Lebensbalken gesendet, wenn das Leben = 0 ist.
 
 #### Gegner
+Die Gegner in diesem Level sehen identisch aus zum Gegner im ersten Level. Allerdings bewegen sich diese Spieler nicht in positive und negative X-Richtung, wie der im ersten Level. Sie verschwinden sobald sie den Spieler oder die grüne Wand berühren. Außerdem handelt es sich um Klone, die kreiert werden, sofern der Spawner noch da ist. 
+
+
+![Gegner erschaffen Message](https://user-images.githubusercontent.com/88385824/163730747-89a6220d-06d1-4852-9f26-2e42fce17142.PNG)
+
+![Wenn sie als Klon starten](https://user-images.githubusercontent.com/88385824/163730749-471ca783-66ee-4ba8-8dce-d5f15de6f9c6.PNG)
+
+![Klon löschen](https://user-images.githubusercontent.com/88385824/163730750-c803276c-08a9-40d6-8200-16d88fc195b6.PNG)
+
+![Variable Klon 1](https://user-images.githubusercontent.com/88385824/163730751-c9be1081-3aaa-4ccf-ad7b-f04015212190.PNG)
+![Variable Klon 2](https://user-images.githubusercontent.com/88385824/163730755-cf2ae833-5040-4b85-8d16-1816581b948a.PNG)
+
 
 ### level 4
 
