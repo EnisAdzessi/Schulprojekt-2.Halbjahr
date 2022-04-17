@@ -1,4 +1,4 @@
-# Informatikprojekt-2.Halbjahr: Jump 'N' Run
+# Informatikprojekt-2.Halbjahr: Jump 'n' Run - Spiel
 *von Julian und Enis, 12bc* 
 ## Inhaltsverzeichnis
 
