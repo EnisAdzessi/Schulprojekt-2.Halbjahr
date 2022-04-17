@@ -15,6 +15,7 @@
   * [Level 3](#Level3)
   * [Level 4](#Level4)
   * [Level 5](#Level5)
+  * [Ende des Spiels](#EndedesSpiels)
 
 * [Arbeitstagebuch]
 
@@ -78,9 +79,54 @@ Wie auch bei der Geschwindigkeit y ergibt sich die X-Koordinate, wenn nach die g
 ## verschiedene Level
 
 ### Level 1
-
 Das Spiel beginnt im ersten Level und diesen erscheint direkt nach Drücken der grünen Flagge. Der Spieler muss auf einen grüner Block springen, hierbei muss er aufpassen, dass er den grünen Klumpen nicht berührt, da dieser ein Gegner ist und ihm Schaden macht. Außerdem sollte er nicht in die Stacheln treten, da diesem ihm auch Schaden zufügen. 
 
 ![Level 1 im Game](https://user-images.githubusercontent.com/88385824/163694980-3163cbb8-19e0-4adb-8de3-570b9ff8a9c2.PNG)
 
+#### Grüner Block 
 
+#### Gegner
+
+#### Stacheln
+
+#### Wechsel zum nächsten Level
+
+### Level 2
+
+#### bewegender Block 
+
+#### Stacheln
+
+#### Aus der Karte fallen
+
+### Level 3
+
+#### Waffe
+
+#### Lebensbalken
+
+#### Spawner
+
+#### Gegner
+
+### level 4
+
+#### Tür 
+
+#### Wechsel zum Level 5
+
+#### Ende des Spiels
+
+### Level 5
+
+#### Wechsel zum Level 4
+
+#### Laser
+
+#### Lava
+
+#### Schlüssel
+
+### Ende des Spiels
+
+#### Siegesmenü
