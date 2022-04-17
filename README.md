@@ -254,7 +254,7 @@ Die Gegner in diesem Level sehen identisch aus zum Gegner im ersten Level. Aller
 
 #### Tür 
 
-Wenn der Spieler die Tür berührt und den Schllüssel aus Level 5 noch nicht eingesammelt hat, kriegt er eine Nachricht, die ihm mitteilt ,dass der Schlüssel fehlt. Sollte der Spieler den Schlüssel eingesammelt haben, wird das Spiel beendet und man kommt zum Siegesmenü in dem man das Spiel neu starten kann. Bei der Tür handelt es sich um einen grünen Block, der durch den Ghosteffect allerdings nicht zu sehen ist. Dieser Block fungiert als Tür und senden die Nachrichten "Ende des Spiels" oder Schlüssel fehlt. 
+Wenn der Spieler die Tür berührt und den Schlüssel aus Level 5 noch nicht eingesammelt hat, kriegt er eine Nachricht, die ihm mitteilt ,dass der Schlüssel fehlt. Sollte der Spieler den Schlüssel eingesammelt haben, wird das Spiel beendet und man kommt zum Siegesmenü in dem man das Spiel neu starten kann. Bei der Tür handelt es sich um einen grünen Block, der durch den Ghosteffect allerdings nicht zu sehen ist. Dieser Block fungiert als Tür und senden die Nachrichten "Ende des Spiels" oder Schlüssel fehlt. 
 
 ![Tür](https://user-images.githubusercontent.com/88385824/163731687-a7ac3e1d-6ee8-4946-a946-4c2fb5fc4113.PNG)
 
