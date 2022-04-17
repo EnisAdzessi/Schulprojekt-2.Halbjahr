@@ -75,7 +75,24 @@ Der Spieler bewegt sich nach der Variable Geschwindigkeit x nach rechts und link
 Wie auch bei der Geschwindigkeit y ergibt sich die X-Koordinate, wenn nach die gesamten Distanz, die man sich bewegt durch die Anzahl der Schritte teilt.
 
 ### Herzen 
-Der Spieler beginnt das Spiel mit 3 Herzen wenn er von einem beispielsweise von einem Stacheln berührt wird, verliert er ein halbes Herz. Wenn er keine Herzen mehr hat, verschwindet der Spieler per "Gost
+Der Spieler beginnt das Spiel mit 3 Herzen wenn er von einem beispielsweise von einem Stacheln berührt wird, verliert er ein halbes Herz. Wenn er keine Herzen mehr hat, verschwindet der Spieler per "Ghosteffect" und das Spiel wird neu gestartet. Der Spieler landet wieder im ersten Level und fällt auf den Boden. 
+
+![volles Leben](https://user-images.githubusercontent.com/88385824/163709275-7b2d031c-6713-46d9-ae67-75d7e39b3a06.PNG)
+
+![halbes Herz](https://user-images.githubusercontent.com/88385824/163709288-e80905b5-0a67-491b-99b1-6f1efbe2ec8d.PNG)
+
+Die Leben des Spielers werden über die Variable Verliert leben definiert. Wenn sich dieser Variable durch das Berühren eines Hindenisses erhöht, wird das jeweilige Kostüm mit der entsprechendes Herzen ausgewählt. 
+
+![herzen code](https://user-images.githubusercontent.com/88385824/163709369-936181cb-66e0-4afd-816b-69059124806e.PNG)
+
+![keine leben mehr block](https://user-images.githubusercontent.com/88385824/163709376-b6da28a9-4dc7-46b4-92b1-ff9491b5c33a.PNG)
+
+Sobald der Spieler keine Leben mehr hat, wird die "Message" "beende Spiel" "gebroadcastet", was das Spiel neu startet.
+
+![beende Spiel](https://user-images.githubusercontent.com/88385824/163709483-f7b73587-1a97-413b-baad-ce8780aac796.PNG)
+
+"Beginne Spiel" ist die "Message die auch ausgeführt wird, wenn man die grüne Flagge drückt. 
+
 
 ## verschiedene Level
 
