@@ -193,7 +193,10 @@ Wenn die X-Koordinate des Spielers unter -150 ist und der das zweite Level ausge
 
 ### Level 3
 
+![Level 3](https://user-images.githubusercontent.com/88385824/163714596-39d88e22-1145-4ea8-9733-e989c8e0c8ac.PNG)
+
 #### Waffe
+Der Spieler kann eine Waffe aufsammeln, mit der er den Gegnerspawner und die Gegner zerstören kann. Die Waffe erscheint nur im Level 3 und verschwindet, wenn sie vom Spieler aufgesammelt wird. Die Schussprojektile können dann mit 1 alle 0.8 Sekunden in die Richtung des Mauszeigers geschossen werden. 
 
 #### Lebensbalken
 
