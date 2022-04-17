@@ -196,9 +196,21 @@ Wenn die X-Koordinate des Spielers unter -150 ist und der das zweite Level ausge
 ![Level 3](https://user-images.githubusercontent.com/88385824/163714596-39d88e22-1145-4ea8-9733-e989c8e0c8ac.PNG)
 
 #### Waffe
-Der Spieler kann eine Waffe aufsammeln, mit der er den Gegnerspawner und die Gegner zerstören kann. Die Waffe erscheint nur im Level 3 und verschwindet, wenn sie vom Spieler aufgesammelt wird. Die Schussprojektile können dann mit 1 alle 0.8 Sekunden in die Richtung des Mauszeigers geschossen werden. 
+Der Spieler kann eine Waffe aufsammeln, mit der er den Gegnerspawner und die Gegner zerstören kann. Die Waffe erscheint nur im Level 3 und verschwindet, wenn sie vom Spieler aufgesammelt wird. Die Schussprojektile können dann mit der Taste 1 alle 0.8 Sekunden in die Richtung des Mauszeigers geschossen werden. Bei den Schussprojektilen handelt es sich um Klone, die alle 0.8 Sekeunden erstellt werden. 
+
+![Waffe erscheinen](https://user-images.githubusercontent.com/88385824/163724855-6c8bd603-4cfe-4bc5-9cb4-dc85297eba68.PNG)
+
+![aufgesammelt werden](https://user-images.githubusercontent.com/88385824/163724857-3f7a71e8-02dc-4cb9-bca1-8f0d14cb911e.PNG)
+
+![Schussprojektil Klon Script](https://user-images.githubusercontent.com/88385824/163724862-2f37ed1d-85a7-4e55-af67-e3b05eb5479c.PNG)
+
+![Klone kreien schussprojektil](https://user-images.githubusercontent.com/88385824/163724865-3886b950-35f4-4e60-9b11-d046f75a80b5.PNG)
+
+
 
 #### Lebensbalken
+
+
 
 #### Spawner
 
