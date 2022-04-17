@@ -102,8 +102,32 @@ Das Spiel beginnt im ersten Level und diesen erscheint direkt nach Drücken der 
 ![Level 1 im Game](https://user-images.githubusercontent.com/88385824/163694980-3163cbb8-19e0-4adb-8de3-570b9ff8a9c2.PNG)
 
 #### Grüner Block 
+Der Spieler muss zu Beginn des Spiel auf diesen BLock springen, um weiter zu kommen. Der Block zeigt sich sobald "beginne Spiel" gebroadcastet wird. Wenn der Spieler zum nächsten Level übergeht verschwindet dieser wieder. 
+
+![grüner block](https://user-images.githubusercontent.com/88385824/163710145-b5386e52-ee89-4e82-8380-01ae12af2b7d.PNG)
+
+![beginne spiel grüner block](https://user-images.githubusercontent.com/88385824/163710149-24eb2ce6-1183-4c5d-88c2-a05db524005b.PNG)
+
+![hide grüner block](https://user-images.githubusercontent.com/88385824/163710162-bd97fe82-6948-4e32-9699-0ad9f98b9cd7.PNG)
+
+![grüner block code](https://user-images.githubusercontent.com/88385824/163710158-e40d8fa6-4119-4294-87b9-67770aa9ddac.PNG)
+
+Der Code funktioniert ähnlich, wie der des grünen Bodens, wo der Spieler nach Kontakt mit dem Block zu seiner letzen X-Koordinate vor dem Kontakt gebracht wird. Auch dies passiert mit der Funktion "Run without screen refresh", wodurch man diese Schritte nicht einzeln sieht.
 
 #### Gegner
+Der Gegnern bewegt sich zwischen zwei grünen Wänden und macht dem Spieler Schaden, wenn er diesen berührt. Er setzt also die Verliert leben Variable um einen Wert. Wie auch der grüne BLock verschwindet dieser, sobald das nächste Level erreicht wird. 
+
+![Gegner](https://user-images.githubusercontent.com/88385824/163710507-df5e40e8-e971-4db4-af00-2511d97c6d24.PNG)
+
+![Gegner 1 show](https://user-images.githubusercontent.com/88385824/163710508-4aeb6754-2958-4e42-8329-fb762f11dae8.PNG)
+
+![rechts links bewegen Gegner](https://user-images.githubusercontent.com/88385824/163710510-5f5de3a7-0064-4fbd-ab17-76400bbadffb.PNG)
+
+![Schaden an Spieler](https://user-images.githubusercontent.com/88385824/163710511-5c5ea373-6501-4b23-a19d-d48589489b18.PNG)
+
+![Forever loop Gegner](https://user-images.githubusercontent.com/88385824/163710513-11951551-c83d-4bd6-9c5d-5133296a88ad.PNG)
+
+
 
 #### Stacheln
 
