@@ -158,9 +158,30 @@ Hierfür wird die ganze Zeit die Message "Letzte Position im Hintergrund" gebroa
 
 ### Level 2
 
+![Level 2](https://user-images.githubusercontent.com/88385824/163712152-df25abe5-8ac7-4472-bb07-f4a27d574828.PNG)
+
 #### bewegender Block 
+Der Block erscheint sobald er Hiintergrund 2 erhält. er geht dann zu den Koordinaten -129/66. Er gleitet dann in 3 Sekunden zu den Koordinaten -128/21. Im Anschluss wartet er 0.7 Sekunden und gleitet dann wieder zu den Ursprungskoordinaten. 
+
+![Block Animation](https://user-images.githubusercontent.com/88385824/163712708-c69a8ecc-91db-4c37-9db9-2046a4a321e1.PNG)
+
+![block hintergurnd 2](https://user-images.githubusercontent.com/88385824/163712709-e1c804bd-2d2c-4c39-b519-b551a2431d50.PNG)
+
+![bewegender block spieler+](https://user-images.githubusercontent.com/88385824/163712711-63435781-8c7b-40c4-be9c-6b52261543a7.PNG)
+
+Es ist das gleiche Prinzip, wie bei grünen Boden und auch beim grünen Block. Das Problem ist hier allerdings das der Spieler auch auf dem Block steht, selbst wenn er der Sprung nicht richtig getimt war. 
 
 #### Stacheln
+Die Stacheln funktionieren, wie die Stacheln im ersten Level.
+
+#### Sprungfeld
+Das Sprungfeld erscheint beim Betretren des Levels und verschwindet, wenn man diesen genutzt hat. Es setzt die Geschwindigkeit y des Spielers auf 18, wodurch dieser höher springen kann, ehe er von der Schwerkraft wieder auf den Boden geholt wird. 
+
+![Sprungfeld show](https://user-images.githubusercontent.com/88385824/163712939-208595cc-01e7-441a-8175-112f47ed6c4f.PNG)
+
+![sprungboost message](https://user-images.githubusercontent.com/88385824/163712941-965d3959-a82f-404a-bea9-77a0857aaa2e.PNG)
+
+![sprungboost hide](https://user-images.githubusercontent.com/88385824/163712940-3603a410-0362-465b-8e70-468cb987d9d8.PNG)
 
 #### Aus der Karte fallen
 
