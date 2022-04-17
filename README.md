@@ -75,6 +75,7 @@ Der Spieler bewegt sich nach der Variable Geschwindigkeit x nach rechts und link
 Wie auch bei der Geschwindigkeit y ergibt sich die X-Koordinate, wenn nach die gesamten Distanz, die man sich bewegt durch die Anzahl der Schritte teilt.
 
 ### Herzen 
+Der Spieler beginnt das Spiel mit 3 Herzen wenn er von einem beispielsweise von einem Stacheln berührt wird, verliert er ein halbes Herz. Wenn er keine Herzen mehr hat, verschwindet der Spieler per "Gost
 
 ## verschiedene Level
 
