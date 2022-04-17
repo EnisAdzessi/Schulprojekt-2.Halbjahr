@@ -198,6 +198,8 @@ Wenn die X-Koordinate des Spielers unter -150 ist und der das zweite Level ausge
 #### Waffe
 Der Spieler kann eine Waffe aufsammeln, mit der er den Gegnerspawner und die Gegner zerstören kann. Die Waffe erscheint nur im Level 3 und verschwindet, wenn sie vom Spieler aufgesammelt wird. Die Schussprojektile können dann mit der Taste 1 alle 0.8 Sekunden in die Richtung des Mauszeigers geschossen werden. Bei den Schussprojektilen handelt es sich um Klone, die alle 0.8 Sekeunden erstellt werden. 
 
+![Bild Waffe](https://user-images.githubusercontent.com/88385824/163725774-41f341ef-3674-4fa2-a3f6-3169c4740df9.PNG)
+
 ![Waffe erscheinen](https://user-images.githubusercontent.com/88385824/163724855-6c8bd603-4cfe-4bc5-9cb4-dc85297eba68.PNG)
 
 ![aufgesammelt werden](https://user-images.githubusercontent.com/88385824/163724857-3f7a71e8-02dc-4cb9-bca1-8f0d14cb911e.PNG)
@@ -209,10 +211,28 @@ Der Spieler kann eine Waffe aufsammeln, mit der er den Gegnerspawner und die Geg
 
 
 #### Lebensbalken
-Der Lebensbalken zeigt ann wie viel Leben der Gegnerspawner noch hat. Das Leben wird über die Variable "eben gesteuert und der Balken sowie auch der Spawner 
+Der Lebensbalken zeigt ann wie viel Leben der Gegnerspawner noch hat. Das Leben wird über die Variable "Leben" gesteuert und der Balken sowie auch der Spawner verschwinden wenn diese 0 erreicht. 
 
+![Lebensbalke Bild](https://user-images.githubusercontent.com/88385824/163725775-4590638b-6380-403a-9b89-40adeb14e8b0.PNG)
+
+![Leben verlieren](https://user-images.githubusercontent.com/88385824/163725581-e31882db-7589-4cad-9c76-5c9fdc49ce61.PNG)
+
+![Lebenskostüme](https://user-images.githubusercontent.com/88385824/163725584-c18f1fec-3bc1-4948-8c1e-c0e6322f651c.PNG)
+
+![Lebensbalken script](https://user-images.githubusercontent.com/88385824/163725585-68766422-04e4-49b3-b57a-6bc133bd5436.PNG)
 
 #### Spawner
+Der Spawner erschafft die Gegner und tut dies solange bis er zerstört wird. Das Leben des Spawners wird durch die Lebensbalken reguliert. Und der Spawner verscwhindet sobald seine Leben 0 sind. Der Spieler kann den Spawner nur mit der Waffe zerstören, indem die Schussprojektile des Spawner treffen. 
+
+![Spawner Bild](https://user-images.githubusercontent.com/88385824/163728609-2e9deb50-dcab-476b-a914-583b8be2aaf7.PNG)
+
+![Spawner Script 1](https://user-images.githubusercontent.com/88385824/163728611-47cd526a-4f5b-41e3-9c90-96a35fc1281f.PNG)
+
+![Spawner Script 2](https://user-images.githubusercontent.com/88385824/163728613-67844b0d-9102-481b-aa33-f34586a6ef1b.PNG)
+
+![Spawner Script 3](https://user-images.githubusercontent.com/88385824/163728615-8a739b0a-2cb5-4f51-815d-1498274a623c.PNG)
+
+
 
 #### Gegner
 
