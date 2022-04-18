@@ -95,7 +95,7 @@ Sobald der Spieler keine Leben mehr hat, wird die "Message" "beende Spiel" "gebr
 
 ## verschiedene Level <a name= "verschiedeneLevel">
 
-### Level 1
+### Level 1  <a name= "Level1">
 Das Spiel beginnt im ersten Level und diesen erscheint direkt nach Drücken der grünen Flagge. Der Spieler muss auf einen grünen Block springen, hierbei muss er aufpassen, dass er den grünen Klumpen nicht berührt, da dieser ein Gegner ist und ihm Schaden macht. Außerdem sollte er nicht in die Stacheln treten, da diesem ihm auch Schaden zufügen. 
 
 ![Level 1 im Game](https://user-images.githubusercontent.com/88385824/163694980-3163cbb8-19e0-4adb-8de3-570b9ff8a9c2.PNG)
@@ -154,7 +154,7 @@ Hierfür wird die ganze Zeit die Nachricht "Letzte Position im Hintergrund" gese
 
 ![Hintergründe Kostüme](https://user-images.githubusercontent.com/88385824/163711436-0d54c6ff-8171-4c27-b19b-1a8ed252558d.PNG)
 
-### Level 2
+### Level 2 <a name= "Level2">
 
 ![Level 2](https://user-images.githubusercontent.com/88385824/163712152-df25abe5-8ac7-4472-bb07-f4a27d574828.PNG)
 
@@ -188,7 +188,7 @@ In diesem Level kann man aus der Karte fallen. Dies geschieht, wenn man nach Ben
 
 Wenn die X-Koordinate des Spielers unter -150 ist und der das zweite Level ausgewählt ist, dann verschwindet der Spieler per "Ghosteffect" und das Spiel wird neu gestartet.
 
-### Level 3
+### Level 3 <a name= "Level3">
 
 ![Level 3](https://user-images.githubusercontent.com/88385824/163714596-39d88e22-1145-4ea8-9733-e989c8e0c8ac.PNG)
 
@@ -243,7 +243,7 @@ Die Gegner in diesem Level sehen identisch aus zum Gegner im ersten Level. Aller
 ![Variable Klon 2](https://user-images.githubusercontent.com/88385824/163730755-cf2ae833-5040-4b85-8d16-1816581b948a.PNG)
 
 
-### level 4
+### level 4 <a name= "Level4">
 
 ![Level 4](https://user-images.githubusercontent.com/88385824/163731469-86f1c3c6-07e5-4101-b7de-84cabd0f3417.PNG)
 
@@ -271,7 +271,7 @@ Sobald der Spieler den äußersten Rand in postiver Y-Richtung erreicht wird sei
 #### Gegner
 Der Gegner funktioniert wie in Level 1.
 
-### Level 5
+### Level 5 <a name= "Level5">
 
 ![Level 5](https://user-images.githubusercontent.com/88385824/163733895-3bd0289e-0ff0-4754-90df-37fe47d44692.PNG)
 
