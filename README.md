@@ -28,7 +28,7 @@ Als Programm für unser Spiel verwendeten wir, wie auch im ersten Halbjahr "Scra
 ## Aufbau des Spiels
 
 ### Spielidee
-Bei unserem Spiel handelt es sich um ein Jump 'n' Run. Als Jump'n' Run bzeichet man Spiele, bei denen sich die Spielfigur laufen und springend fortbewegt. Ein zentrales Element des Spielprinzips stellt da das präzise Springen dar, da man so mögliches Hindernisse ausweichen kann oder bestimmte Positionen erreichen kann. Es gibt unterschiedliche Level, die sich in den Hindernisse und dem Aussehen unterscheiden. Sollte der Spieler einige Hindernisse nicht überstehen können, wird sein spielbarer Charakter besiegt und er muss das Spiel von vorne beginnen. Das Ziel ist es alle Level zu überstehen ohne besiegt zu werden.
+Bei unserem Spiel handelt es sich um ein Jump 'n' Run. Als Jump'n' Run bezeichnet man Spiele, bei denen sich die Spielfigur laufen und springend fortbewegen. Ein zentrales Element des Spielprinzips stellt da das präzise Springen dar, da man so mögliche Hindernissen ausweichen kann oder bestimmte Positionen erreichen kann. Es gibt unterschiedliche Level, die sich in den Hindernissen und dem Aussehen unterscheiden. Sollte der Spieler einige Hindernisse nicht überstehen können, verliert er Leben und dies kann darin resultieren, dass sein spielbarer Charakter besiegt wird  und er muss das Spiel von vorne beginnen muss. Das Ziel ist es alle Level zu überstehen ohne besiegt zu werden.
 
 ![Level 1](https://user-images.githubusercontent.com/88385824/163688503-fa192bcc-223e-4885-a048-920bee7ddf93.PNG)
 
@@ -39,9 +39,10 @@ Bei unserem Spiel handelt es sich um ein Jump 'n' Run. Als Jump'n' Run bzeichet 
 *Beispiel für ein Hindernis*
 
 ### Grundkonzept und Steuerung 
-Zu Beginn des Spiel erscheint der Spieler, ein lila Quadrat, im ersten Level. Wir nutzen als Spieler ein Quadrat, damit die der Bereich in dem der Spieler getroffen werden kann nicht extra programmieren müssen. Bei einem Menschen z.B würden die Arme abstehen und alles wäre nicht nicht in einer geraden Linie. Der Untergrund ist grün und er kann sich auf diesem nach links und rechts in  + und - X-Richtung  bewegen. Außerdem kann er durch Sprünge auch in Y- Richtung bewegt werden. Nach kurzer Zeit landet er, wie im echten Leben auch wieder auf dem Untergrund. 
+Zu Beginn des Spiel erscheint der Spieler, ein lila Quadrat, im ersten Level. Wir nutzen als Spieler ein Quadrat, damit wir den Bereich in dem der Spieler getroffen werden kann nicht extra programmieren müssen. Ein Kontakt der Arme mit einer Wand müsste anders aussehen als ein Kontakt mit den Füßen.
+Der Untergrund des Spiels ist grün und der Spieler kann sich auf diesem nach links und rechts in  + und - X-Richtung  bewegen. Außerdem kann er durch Sprünge auch in Y-Richtung bewegt werden. Nach kurzer Zeit landet er, wie im echten Leben auch wieder auf dem Boden. 
 
-Der Spieler bewegt sich in Y-Richtung durch die Variable Geschwindigkeit y und in X-Richtung durch die Variable Geschwindigkeit x. Der Spieler fällt zu Beginn des Spiels auf den Boden, da die Geschwindigkeit y durch durch die Schwerkraft verändert wird. Die Schwerkraft ist auf -1 gesetzt. Das hat zur Folge , dass bei einem Sprung als einer Erhörung der Geschwindigkeit y, die Varible konstant um -1 veringert wird. Wodruch man bei einem längeren Fall beschleunigt und zum Ende schneller fällt. Um den Spieler beim Berühren des grünen Untergrunds zu stoppen, verwenden wir einen eigenen Block, der sich "Bewegung in Schritten" nennt, der Vorteil bei eigenen Blöcken in Scratch ist, dass man die Funktion "Run without screen refresh" nutzen kann, wodurch der Code in einem Frame abläuft und man die einzelnen Schritte nicht sieht. 
+Der Spieler bewegt sich in Y-Richtung durch die Variable "Geschwindigkeit y" und in X-Richtung durch die Variable "Geschwindigkeit x". Der Spieler fällt zu Beginn des Spiels auf den Boden, da die Geschwindigkeit y durch durch die Schwerkraft verändert wird. Die Schwerkraft ist auf -1 gesetzt. Das hat zur Folge , dass bei einem Sprung also einer Erhörung der Geschwindigkeit y, die Varible konstant um -1 veringert wird. Wodurch man bei einem längeren Fall beschleunigt und kurz vor dem Aufprall die höchste Geschwindigkeit hat. Um den Spieler beim Berühren des grünen Untergrunds zu stoppen, verwenden wir einen eigenen Block, der sich "Bewegung in Schritten" nennt, der Vorteil bei eigenen Blöcken in Scratch ist, dass man die Funktion "Run without screen refresh" nutzen kann, wodurch der Code in einem Frame abläuft und man die einzelnen Schritte nicht sieht. 
 
 ![run without screen refresh](https://user-images.githubusercontent.com/88385824/163691571-4d85f686-a2a3-49db-bdf0-0ad96c3da182.PNG)
 
@@ -51,16 +52,15 @@ Die Kontrolle wie oft der Untergrund berührt wird, passiert durch die Variable 
 
 ![Schritte definiert 2](https://user-images.githubusercontent.com/88385824/163691745-ea5a53aa-bc12-48ca-8235-62ac47d32b84.PNG)
 
-Durch diesen Code wird dafür gesorgt, dass der Spieler auf dem Untergrund stehen kann und nicht einsickt:
+Durch diesen Code wird dafür gesorgt, dass der Spieler auf dem Untergrund stehen kann und nicht einsinkt:
 
 ![Auf Untergrund stehen](https://user-images.githubusercontent.com/88385824/163691669-ef1f2233-aa67-49e4-8b64-3bbb83fd47e1.PNG)
 
-Diese Blockabfolge ist essentiell für das Spiel und läuft konstant, sobald der Spieler springt und auf der Untergrund landet. 
+Diese Blockabfolge ist essentiell für das Spiel und läuft konstant, sobald der Spieler springt und auf dem Untergrund landet. 
 
 ### Springen 
 
-Das Springen erfolgt durch das Drücken der Leertaste, Geschwindigkeit Y wird dann auf 13 gesetzt und der Spieler bewegt sich 13 Y Koordinaten nach unten. Wenn er den höchsten Punkt erreicht hat, wird er die Geschwindigkeit y um die Schwerkraft, die -1 beträgt gesenkt und der Spieler fällt, bis er den grünen Untergrund berührt. Damit der Spieler nicht unendlich hoch springen kann, benutzen wir eine Variable, die sich Fallen nennt. Je weiter sich der Spieler vom Untergrund entfernt, desto höher wird die Variable, wenn er diesen berührt ist Fallen = 0. Wenn die Fallen Variable = 3 ist ein Sprung möglich, da der Spieler sich dann sehr nah am Boden befindet. Um das Spiel ein wenig schwieriger zu machen muss man die Leertaste jedes mal neu drücken, um zu springen. Dies passiert aufgrund der Variable Sprung Leertaste, die gleich 1 gesetzt wird wenn die Leertaste gedrückt wird. Ein Sprung ist nur dann möglich wenn diese Variable = 0 ist.
-
+Das Springen erfolgt durch das Drücken der Leertaste, Geschwindigkeit Y wird dann auf 13 gesetzt und der Spieler bewegt sich 13 Y Koordinaten nach unten. Wenn er den höchsten Punkt erreicht hat, wird die Geschwindigkeit y um die Schwerkraft, die -1 beträgt gesenkt und der Spieler fällt, bis er den grünen Boden berührt. Damit der Spieler nicht unendlich hoch springen kann, benutzen wir eine Variable, die sich Fallen nennt. Je weiter sich der Spieler vom Untergrund entfernt, desto höher wird die Variable, wenn er diesen berührt ist Fallen = 0. Wenn die Fallen Variable = 3 ist ein Sprung möglich, da der Spieler sich dann sehr nah am Boden befindet. Um das Spiel ein wenig schwieriger zu machen muss man die Leertaste jedes mal neu drücken, um zu springen. Dies passiert aufgrund der Variable Sprung Leertaste, die gleich 1 gesetzt wird wenn die Leertaste gedrückt wird. Ein Sprung ist nur dann möglich wenn diese Variable = 0 ist.
 
 ![Springen](https://user-images.githubusercontent.com/88385824/163694378-9e706e29-9153-49e8-9be5-9a77a0493b6a.PNG)
 
@@ -72,16 +72,16 @@ Der Spieler bewegt sich nach der Variable Geschwindigkeit x nach rechts und link
 
 ![Schritte definiert 3](https://user-images.githubusercontent.com/88385824/163694786-d834a3c2-8028-491b-a297-3a60b477100d.PNG)
 
-Wie auch bei der Geschwindigkeit y ergibt sich die X-Koordinate, wenn nach die gesamten Distanz, die man sich bewegt durch die Anzahl der Schritte teilt.
+Wie auch bei der Geschwindigkeit y ergibt sich die X-Koordinate, wenn man die gesamte Distanz, die man sich bewegt durch die Anzahl der Schritte teilt.
 
 ### Herzen 
-Der Spieler beginnt das Spiel mit 3 Herzen wenn er von einem beispielsweise von einem Stacheln berührt wird, verliert er ein halbes Herz. Wenn er keine Herzen mehr hat, verschwindet der Spieler per "Ghosteffect" und das Spiel wird neu gestartet. Der Spieler landet wieder im ersten Level und fällt auf den Boden. 
+Der Spieler beginnt das Spiel mit 3 Herzen, wenn er von einem beispielsweise von einem Stacheln berührt wird, verliert er ein halbes Herz. Wenn er keine Herzen mehr hat, verschwindet der Spieler per "Ghosteffect" und das Spiel wird neu gestartet. Der Spieler landet wieder im ersten Level und fällt auf den Boden. 
 
 ![volles Leben](https://user-images.githubusercontent.com/88385824/163709275-7b2d031c-6713-46d9-ae67-75d7e39b3a06.PNG)
 
 ![halbes Herz](https://user-images.githubusercontent.com/88385824/163709288-e80905b5-0a67-491b-99b1-6f1efbe2ec8d.PNG)
 
-Die Leben des Spielers werden über die Variable Verliert leben definiert. Wenn sich dieser Variable durch das Berühren eines Hindenisses erhöht, wird das jeweilige Kostüm mit der entsprechendes Herzen ausgewählt. 
+Die Leben des Spielers werden über die Variable "Verliert leben" definiert. Wenn sich dieser Variable durch das Berühren eines Hindenisses erhöht, wird das jeweilige Kostüm mit der entsprechenden Herzen ausgewählt. 
 
 ![herzen code](https://user-images.githubusercontent.com/88385824/163709369-936181cb-66e0-4afd-816b-69059124806e.PNG)
 
@@ -91,18 +91,17 @@ Sobald der Spieler keine Leben mehr hat, wird die "Message" "beende Spiel" "gebr
 
 ![beende Spiel](https://user-images.githubusercontent.com/88385824/163709483-f7b73587-1a97-413b-baad-ce8780aac796.PNG)
 
-"Beginne Spiel" ist die "Message die auch ausgeführt wird, wenn man die grüne Flagge drückt. 
-
+"Beginne Spiel" ist die Nachricht, die auch ausgeführt wird, wenn man die grüne Flagge drückt. 
 
 ## verschiedene Level
 
 ### Level 1
-Das Spiel beginnt im ersten Level und diesen erscheint direkt nach Drücken der grünen Flagge. Der Spieler muss auf einen grüner Block springen, hierbei muss er aufpassen, dass er den grünen Klumpen nicht berührt, da dieser ein Gegner ist und ihm Schaden macht. Außerdem sollte er nicht in die Stacheln treten, da diesem ihm auch Schaden zufügen. 
+Das Spiel beginnt im ersten Level und diesen erscheint direkt nach Drücken der grünen Flagge. Der Spieler muss auf einen grünen Block springen, hierbei muss er aufpassen, dass er den grünen Klumpen nicht berührt, da dieser ein Gegner ist und ihm Schaden macht. Außerdem sollte er nicht in die Stacheln treten, da diesem ihm auch Schaden zufügen. 
 
 ![Level 1 im Game](https://user-images.githubusercontent.com/88385824/163694980-3163cbb8-19e0-4adb-8de3-570b9ff8a9c2.PNG)
 
 #### Grüner Block 
-Der Spieler muss zu Beginn des Spiel auf diesen BLock springen, um weiter zu kommen. Der Block zeigt sich sobald "beginne Spiel" gebroadcastet wird. Wenn der Spieler zum nächsten Level übergeht verschwindet dieser wieder. 
+Der Spieler muss zu Beginn des Spiel auf diesen Block springen, um weiter zu kommen. Der Block zeigt sich sobald "beginne Spiel" gebroadcastet wird. Wenn der Spieler zum nächsten Level übergeht verschwindet dieser wieder. 
 
 ![grüner block](https://user-images.githubusercontent.com/88385824/163710145-b5386e52-ee89-4e82-8380-01ae12af2b7d.PNG)
 
@@ -115,7 +114,7 @@ Der Spieler muss zu Beginn des Spiel auf diesen BLock springen, um weiter zu kom
 Der Code funktioniert ähnlich, wie der des grünen Bodens, wo der Spieler nach Kontakt mit dem Block zu seiner letzen X-Koordinate vor dem Kontakt gebracht wird. Auch dies passiert mit der Funktion "Run without screen refresh", wodurch man diese Schritte nicht einzeln sieht.
 
 #### Gegner
-Der Gegnern bewegt sich zwischen zwei grünen Wänden und macht dem Spieler Schaden, wenn er diesen berührt. Er setzt also die Verliert leben Variable um einen Wert. Wie auch der grüne BLock verschwindet dieser, sobald das nächste Level erreicht wird. 
+Der Gegner bewegt sich zwischen zwei grünen Wänden und macht dem Spieler Schaden, wenn er diesen berührt. Er setzt also die Verliert leben Variable um einen Wert runter. Wie auch der grüne Block verschwindet dieser, sobald das nächste Level erreicht wird. 
 
 ![Gegner](https://user-images.githubusercontent.com/88385824/163710507-df5e40e8-e971-4db4-af00-2511d97c6d24.PNG)
 
@@ -123,14 +122,14 @@ Der Gegnern bewegt sich zwischen zwei grünen Wänden und macht dem Spieler Scha
 
 ![rechts links bewegen Gegner](https://user-images.githubusercontent.com/88385824/163710510-5f5de3a7-0064-4fbd-ab17-76400bbadffb.PNG)
 
-Der Gegner berührt den Boden nicht wirklich, wodurch es dort zu keinen Problem kommt. 
+Der Gegner berührt den Boden nicht wirklich, wodurch es dort zu keinen Problemen kommt. 
 
 ![Schaden an Spieler](https://user-images.githubusercontent.com/88385824/163710511-5c5ea373-6501-4b23-a19d-d48589489b18.PNG)
 
 ![Forever loop Gegnerr](https://user-images.githubusercontent.com/88385824/163710550-06c46984-b059-4f9c-8d8c-47accfcde34e.PNG)
 
 #### Stacheln
-Bei den Stacheln handelt es sich um eine Hindernis, die dem Spieler Schaden hinzufügen, sobald er diese berührt.
+Bei den Stacheln handelt es sich um ein Hindernis, das dem Spieler Schaden hinzufügen, sobald er diese berührt.
 
 ![Stacheln](https://user-images.githubusercontent.com/88385824/163710925-5dfcdb56-9075-47b0-9df1-142896106db6.PNG)
 
@@ -143,12 +142,11 @@ Bei den Stacheln handelt es sich um eine Hindernis, die dem Spieler Schaden hinz
 Damit der Spieler nicht in den Boden einsinkt, wird er bei einem Kontakt mit den Stacheln hochbewegt. Aus dieser Block funktioniert wieder mit der Funktion "Run without screen refresh".
 
 #### Wechsel zum nächsten Level
-
-Wenn der Spieler sich zum äußeren Rand im positiver X-Richtung befindet, dann wird wird der Hintergrund getauscht und er kann direkt weiterlaufen. Die Level sind auch so gebaut, dass er auf der gleichen Ebene bleibt und nicht plözlich in eine Wand läuft. 
+Wenn der Spieler sich am äußeren Rand in positiver X-Richtung befindet, dann wird wird der Hintergrund gewechselt und er kann direkt weiterlaufen. Die Level sind so gebaut, dass er auf der gleichen Ebene bleibt und nicht plözlich in eine Wand läuft. 
 
 ![gb3twbwz](https://user-images.githubusercontent.com/88385824/163711110-a6a6ac05-7d26-470f-968c-c3e4ba2a46ee.gif)
 
-Hierfür wird die ganze Zeit die Message "Letzte Position im Hintergrund" gebroadcastet. Diese prüft, ob die X Position des Spieler größer ist als 235, weil dies der äußerste Rand ist. Sobald dies der Fall ist wird die X Koordinate auf -235 gesetzt, damit sich der Spieler am äußersten Rand in -X-Richtung ist. Außerdem wird die Variable Hintergrund # um einen erhöhrt. Dies sorgt dafür, dass das zweite Level gezeigt wird und das erste verschwindet. 
+Hierfür wird die ganze Zeit die Nachricht "Letzte Position im Hintergrund" gesendet. Diese prüft, ob die X Position des Spieler größer ist als 235, weil dies der äußerste Rand ist, an der der Spieler sich aufhalten kann. Sobald dies der Fall ist wird die X Koordinate auf -235 gesetzt, damit sich der Spieler am äußersten Rand in negativer X-Richtung befindet. Außerdem wird die Variable "Hintergrund #" um einen erhöht. Dies sorgt dafür, dass das zweite Level gezeigt wird und das erste verschwindet. 
 
 ![Letze Position im Hintergrund](https://user-images.githubusercontent.com/88385824/163711431-28f5885c-989c-44f9-aea7-9ed3cfe6e331.PNG)
 
@@ -169,13 +167,13 @@ Der Block erscheint sobald er Hiintergrund 2 erhält. er geht dann zu den Koordi
 
 ![bewegender block spieler+](https://user-images.githubusercontent.com/88385824/163712711-63435781-8c7b-40c4-be9c-6b52261543a7.PNG)
 
-Es ist das gleiche Prinzip, wie bei grünen Boden und auch beim grünen Block. Das Problem ist hier allerdings das der Spieler auch auf dem Block steht, selbst wenn er der Sprung nicht richtig getimt war. 
+Es ist das gleiche Prinzip, wie bei grünen Boden und auch beim grünen Block. Das Problem ist hier allerdings, dass der Spieler auch auf dem Block steht, selbst wenn er der Sprung nicht richtig getimt war. Sobald er diesen berührt wird er auf ihn gesetzt.
 
 #### Stacheln
 Die Stacheln funktionieren, wie die Stacheln im ersten Level.
 
 #### Sprungfeld
-Das Sprungfeld erscheint beim Betretren des Levels und verschwindet, wenn man diesen genutzt hat. Es setzt die Geschwindigkeit y des Spielers auf 18, wodurch dieser höher springen kann, ehe er von der Schwerkraft wieder auf den Boden geholt wird. 
+Das Sprungfeld erscheint beim Betretren des Levels und verschwindet, wenn man es genutzt hat. Es setzt die Geschwindigkeit y des Spielers auf 18, wodurch dieser höher springen kann, ehe er von der Schwerkraft wieder auf den Boden geholt wird. 
 
 ![Sprungfeld show](https://user-images.githubusercontent.com/88385824/163712939-208595cc-01e7-441a-8175-112f47ed6c4f.PNG)
 
@@ -184,8 +182,7 @@ Das Sprungfeld erscheint beim Betretren des Levels und verschwindet, wenn man di
 ![sprungboost hide](https://user-images.githubusercontent.com/88385824/163712940-3603a410-0362-465b-8e70-468cb987d9d8.PNG)
 
 #### Aus der Karte fallen
-In diesem Level kann man aus der Karte fallen fallen. Dies geschieht, wenn man nach Benutzen des Sprundfeldes nicht auf dem grünen Untergrund landet. Der Spieler dann aus der Karte und das Spiel beginnt von vorne. 
-
+In diesem Level kann man aus der Karte fallen. Dies geschieht, wenn man nach Benutzen des Sprundfeldes nicht auf dem grünen Untergrund landet. Der Spieler verschwindet dann, wenn er den Rand in negativer Y-Richtung erreicht und fällt somit aus der Karte und das Spiel beginnt von vorne. 
 
 ![aus der map fallen](https://user-images.githubusercontent.com/88385824/163713450-659ff703-82d7-4dc4-ac90-57d67ca750ea.PNG)
 
@@ -196,7 +193,7 @@ Wenn die X-Koordinate des Spielers unter -150 ist und der das zweite Level ausge
 ![Level 3](https://user-images.githubusercontent.com/88385824/163714596-39d88e22-1145-4ea8-9733-e989c8e0c8ac.PNG)
 
 #### Waffe
-Der Spieler kann eine Waffe aufsammeln, mit der er den Gegnerspawner und die Gegner zerstören kann. Die Waffe erscheint nur im Level 3 und verschwindet, wenn sie vom Spieler aufgesammelt wird. Die Schussprojektile können dann mit der Taste 1 alle 0.8 Sekunden in die Richtung des Mauszeigers geschossen werden. Bei den Schussprojektilen handelt es sich um Klone, die alle 0.8 Sekeunden erstellt werden. 
+Der Spieler kann eine Waffe aufsammeln, mit der er den "Gegnerspawner" und die Gegner zerstören kann. Die Waffe erscheint nur im Level 3 und verschwindet, wenn sie vom Spieler aufgesammelt wird. Die Schussprojektile können dann mit der Taste 1 alle 0.8 Sekunden in die Richtung des Mauszeigers geschossen werden. Bei den Schussprojektilen handelt es sich um Klone, die alle 0.8 Sekeunden erstellt werden. 
 
 ![Bild Waffe](https://user-images.githubusercontent.com/88385824/163725774-41f341ef-3674-4fa2-a3f6-3169c4740df9.PNG)
 
@@ -208,10 +205,8 @@ Der Spieler kann eine Waffe aufsammeln, mit der er den Gegnerspawner und die Geg
 
 ![Klone kreien schussprojektil](https://user-images.githubusercontent.com/88385824/163724865-3886b950-35f4-4e60-9b11-d046f75a80b5.PNG)
 
-
-
 #### Lebensbalken
-Der Lebensbalken zeigt ann wie viel Leben der Gegnerspawner noch hat. Das Leben wird über die Variable "Leben" gesteuert und der Balken sowie auch der Spawner verschwinden wenn diese 0 erreicht. 
+Der Lebensbalken zeigt an wie viel Leben der Gegnerspawner noch hat. Das Leben wird über die Variable "Leben" gesteuert und der Balken sowie auch der Spawner verschwinden wenn diese 0 erreicht. 
 
 ![Lebensbalke Bild](https://user-images.githubusercontent.com/88385824/163725775-4590638b-6380-403a-9b89-40adeb14e8b0.PNG)
 
@@ -222,7 +217,7 @@ Der Lebensbalken zeigt ann wie viel Leben der Gegnerspawner noch hat. Das Leben 
 ![Lebensbalken script](https://user-images.githubusercontent.com/88385824/163725585-68766422-04e4-49b3-b57a-6bc133bd5436.PNG)
 
 #### Spawner
-Der Spawner erschafft die Gegner und tut dies solange bis er zerstört wird. Das Leben des Spawners wird durch den Lebensbalken reguliert. Und der Spawner verschwindet sobald seine Leben 0 sind. Der Spieler kann den Spawner nur mit der Waffe zerstören, indem die Schussprojektile den Spawner treffen. 
+Der Spawner erschafft die Gegner und tut dies solange bis er zerstört wird. Das Leben des Spawners wird durch den Lebensbalken reguliert. Der Spawner verschwindet sobald seine Leben 0 sind. Der Spieler kann den Spawner nur mit der Waffe zerstören, indem die Schussprojektile den Spawner treffen. 
 
 ![Spawner Bild](https://user-images.githubusercontent.com/88385824/163728609-2e9deb50-dcab-476b-a914-583b8be2aaf7.PNG)
 
@@ -254,7 +249,7 @@ Die Gegner in diesem Level sehen identisch aus zum Gegner im ersten Level. Aller
 
 #### Tür 
 
-Wenn der Spieler die Tür berührt und den Schlüssel aus Level 5 noch nicht eingesammelt hat, kriegt er eine Nachricht, die ihm mitteilt ,dass der Schlüssel fehlt. Sollte der Spieler den Schlüssel eingesammelt haben, wird das Spiel beendet und man kommt zum Siegesmenü in dem man das Spiel neu starten kann. Bei der Tür handelt es sich um einen grünen Block, der durch den Ghosteffect allerdings nicht zu sehen ist. Dieser Block fungiert als Tür und senden die Nachrichten "Ende des Spiels" oder Schlüssel fehlt. 
+Wenn der Spieler die Tür berührt und den Schlüssel aus Level 5 noch nicht eingesammelt hat, kriegt er eine Nachricht, die ihm mitteilt, dass der Schlüssel fehlt. Sollte der Spieler den Schlüssel eingesammelt haben, wird das Spiel beendet und man kommt zum Siegesmenü, in dem man das Spiel neu starten kann. Bei der Tür handelt es sich um einen grünen Block, der durch den Ghosteffect allerdings nicht zu sehen ist. Dieser Block fungiert als Tür und sendet die Nachrichten "Ende des Spiels" oder "Schlüssel fehlt". 
 
 ![Tür](https://user-images.githubusercontent.com/88385824/163731687-a7ac3e1d-6ee8-4946-a946-4c2fb5fc4113.PNG)
 
@@ -267,7 +262,7 @@ Wie zu erkennen ist, ist dies die eigentliche Tür. Die braune Tür ist kein eig
 ![Tür schlüssel code](https://user-images.githubusercontent.com/88385824/163731690-0cc2576c-4fcc-44dd-b42f-bd89d7a15e7b.PNG)
 
 #### Wechsel zum Level 5
-Sobald der Spieler den äußersten Rand im postiver Y-Richtung erreicht wird seine Position in die niedrigste Y-Koordinate den nächsten Levels geändert, da sich das fünfte Level über dem vierten befindet. Wenn der Spieler die Y-Koordinate 185 erreicht wird die Hintergrund Variable auf 14 gesetzt, wodurch das fünfte Level ausgewählt ist. Wir wählten die Nummer 14, da wir zunächst mehrere Level machen wählten, die sich über anderen befinden, für diese Level wollten wir 10 Potenzen benutzen, also 14, 15 etc. , wir schafften allerdings nicht mehr bis zur Fertigstellung.
+Sobald der Spieler den äußersten Rand in postiver Y-Richtung erreicht wird seine Position in die niedrigste Y-Koordinate den nächsten Levels geändert, da sich das fünfte Level über dem vierten befindet. Wenn der Spieler die Y-Koordinate 185 erreicht wird die Hintergrund Variable auf 14 gesetzt, wodurch das fünfte Level ausgewählt ist. Wir wählten die Nummer 14, da wir zunächst mehrere Level machen wählten, die sich über anderen befinden, für diese Level wollten wir 10 Potenzen benutzen, also 14, 15 etc. , wir schafften dies  allerdings nicht mehr bis zur Fertigstellung.
 
 ![Level 5 Hintergrund](https://user-images.githubusercontent.com/88385824/163733401-4ba5558f-4053-4056-a54a-37c7aebd7797.PNG)
 
@@ -281,12 +276,12 @@ Der Gegner funktioniert wie in Level 1.
 ![Level 5](https://user-images.githubusercontent.com/88385824/163733895-3bd0289e-0ff0-4754-90df-37fe47d44692.PNG)
 
 #### Wechsel zum Level 4
-Der Wechsel funktioniert ähnlich wie der vom Level 4 zu Level 5. 
+Der Wechsel funktioniert ähnlich wie der von Level 4 zu Level 5. 
 
 ![Wechsel 5 4](https://user-images.githubusercontent.com/88385824/163734097-32ffc8ef-3cb0-4c32-aadf-62a0dc74c876.PNG)
 
 #### Laser
-Die Laser machen dem Spieler Schaden und erscheinen für eine kurze Zeit. Der Spieler muss im richtigen Moment springen, um nicht getroffen zu werden, da die Laser sehr dem Spieler sehr Leben abziehen. Beim Betreten des level 5 sind sie nicht zu sehen und sieht erst kurz danach zu sehen, was für einen Überraschungsmoment sorgen soll. 
+Die Laser machen dem Spieler Schaden und erscheinen für eine kurze Zeit. Der Spieler muss im richtigen Moment springen, um nicht getroffen zu werden, da die Laser sehr dem Spieler relativ viel Leben abziehen. Beim Betreten des Level 5 sind sie zunächst nicht zu sehen und erscheinen erst nach einer kurzen Zeit, was für einen Überraschungsmoment sorgen soll. 
 
 ![Laser](https://user-images.githubusercontent.com/88385824/163734385-bf27ffd2-a348-4992-8b2f-c4de7d28e848.PNG)
 
@@ -295,22 +290,21 @@ Die Laser machen dem Spieler Schaden und erscheinen für eine kurze Zeit. Der Sp
 ![Laser Schaden an Spieler](https://user-images.githubusercontent.com/88385824/163734388-43070503-00b8-4fc8-9ad8-8d616985c6e3.PNG)
 
 #### Lava
-Die Lava ist das Finale Hindernis vor erreichen des Schlüssels. Wenn der Spieler in die Lava fällt, verliert er seine gesamten Herzen und das Spiel beginnt von vorne. Die Lava steigt und sinkt abwechselnd. Das richtige Skript für die Animation haben wir aus diesem Video https://www.youtube.com/watch?v=IbsV0SJBxm4.
-
+Die Lava ist das Finale Hindernis vor Erreichen des Schlüssels. Wenn der Spieler in die Lava fällt, verliert er seine gesamten Herzen und das Spiel beginnt von vorne. Die Lava steigt und sinkt abwechselnd. Das richtige Skript für die Animation haben wir aus diesem Video https://www.youtube.com/watch?v=IbsV0SJBxm4.
 
 ![Lava](https://user-images.githubusercontent.com/88385824/163734689-cd53dd2e-270e-4f60-85bf-e5e9f2e743b8.PNG)
 
 ![Lava Animation](https://user-images.githubusercontent.com/88385824/163734690-f380bc63-dd24-428a-8b67-0225251b95a0.PNG)
 
 #### Schlüssel
-Der Schlüssel ist notwendig um durch die Tür zu kommen und das Spiel zu beenden. Sobald der Spieler den Schlüssel berührt wird dieser eingesammelt und die Schlüssel Variable wird von 0 auf 1 gesetzt. Der Spieler kann nun durch die Tür gehen und das Spiel beenden. Wenn er vom Level 4 ins Level 5 wechselt, nachdem er den Schlüsel eingesammelt hat, ist dieser nicht mehr zu sehen. 
+Der Schlüssel ist notwendig um durch die Tür zu kommen und das Spiel zu beenden. Sobald der Spieler den Schlüssel berührt wird dieser eingesammelt und die Schlüssel Variable wird von 0 auf 1 gesetzt. Der Spieler kann nun durch die Tür gehen und das Spiel beenden. Wenn diese  nachdem er den Schlüssel eingesammelt hat vom Level 4 ins Level 5 wechselt, ist dieser nicht mehr zu sehen. 
 
 ![Schlüssel](https://user-images.githubusercontent.com/88385824/163734984-56676c83-ff2c-4507-9e45-3ae89184ac9c.PNG)
 
 ![Schlüssel Code](https://user-images.githubusercontent.com/88385824/163734985-20765c21-54e8-42d3-861f-e9954aef5bc1.PNG)
 
 #### Siegesmenü
-Wenn der Spieler den Schlüssel eingesammelt hat und durch die Tür geht hat er das Spiel geschafft. Im Siegesmenü wird ihm gratuliert und er kann das Spiel von vorne starten, indem er auf den "Spiele nochmal" klickt. Wenn der mauszeiger auf diesem befindet ändern sich dessen Farbe.
+Wenn der Spieler den Schlüssel eingesammelt hat und durch die Tür geht hat er das Spiel geschafft. Im Siegesmenü wird ihm gratuliert und er kann das Spiel von vorne starten, indem er auf den "Spiele nochmal" Button klickt. Wenn der Mauszeiger sich auf diesem befindet ändern sich dessen Farbe.
 
 ![gb3twbwz (1)](https://user-images.githubusercontent.com/88385824/163735047-a0490b74-b40c-4b12-bd9b-da3cfe7c7640.gif)
 
