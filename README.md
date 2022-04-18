@@ -1,5 +1,7 @@
 # Informatikprojekt-2.Halbjahr: Jump 'n' Run - Spiel
-*von Julian und Enis, 12bc* 
+Stormarnschule 2021/22
+Informatik,Bl
+*von Julian Hayer und Enis Adzessi, 12bc* 
 ## Inhaltsverzeichnis
 
 * [Programm](#Programm)
