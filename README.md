@@ -25,9 +25,9 @@
 ![Scratchlogo svg](https://user-images.githubusercontent.com/88385822/143713115-9840c9ea-9b26-4cbf-aaf7-b0768424819b.png)
 Als Programm für unser Spiel verwendeten wir, wie auch im ersten Halbjahr "Scratch", eine besonders anfänderfreundliche Programiersprache, die keine Vorkenntnisse in einer Programmiersprache vorraussetzte. Ihr Ziel ist es Neueinsteiger, besonders Kinder und Jugendliche mit den Grundkonzepten des Programmieren vertraut zu machen. Hierbei wird der Quellcode in Blöcke vereinfacht, die nach Belieben zusammengeheftet werden können. Die verschiedenen Blockarten unterscheiden sich hier in der Farbe und macht Scratch zu einer sehr visuellen und optisch ansprechenden Programmiersprache. 
 
-## Aufbau des Spiels
+## Aufbau des Spiels  <a name= "AufbaudesSpiels">
 
-### Spielidee
+### Spielidee  <a name= "Spielidee">
 Bei unserem Spiel handelt es sich um ein Jump 'n' Run. Als Jump'n' Run bezeichnet man Spiele, bei denen sich die Spielfigur laufen und springend fortbewegen. Ein zentrales Element des Spielprinzips stellt da das präzise Springen dar, da man so mögliche Hindernissen ausweichen kann oder bestimmte Positionen erreichen kann. Es gibt unterschiedliche Level, die sich in den Hindernissen und dem Aussehen unterscheiden. Sollte der Spieler einige Hindernisse nicht überstehen können, verliert er Leben und dies kann darin resultieren, dass sein spielbarer Charakter besiegt wird  und er muss das Spiel von vorne beginnen muss. Das Ziel ist es alle Level zu überstehen ohne besiegt zu werden.
 
 ![Level 1](https://user-images.githubusercontent.com/88385824/163688503-fa192bcc-223e-4885-a048-920bee7ddf93.PNG)
@@ -38,7 +38,7 @@ Bei unserem Spiel handelt es sich um ein Jump 'n' Run. Als Jump'n' Run bezeichne
 
 *Beispiel für ein Hindernis*
 
-### Grundkonzept und Steuerung 
+### Grundkonzept und Steuerung <a name= "Steuerung">
 Zu Beginn des Spiel erscheint der Spieler, ein lila Quadrat, im ersten Level. Wir nutzen als Spieler ein Quadrat, damit wir den Bereich in dem der Spieler getroffen werden kann nicht extra programmieren müssen. Ein Kontakt der Arme mit einer Wand müsste anders aussehen als ein Kontakt mit den Füßen.
 Der Untergrund des Spiels ist grün und der Spieler kann sich auf diesem nach links und rechts in  + und - X-Richtung  bewegen. Außerdem kann er durch Sprünge auch in Y-Richtung bewegt werden. Nach kurzer Zeit landet er, wie im echten Leben auch wieder auf dem Boden. 
 
@@ -58,7 +58,7 @@ Durch diesen Code wird dafür gesorgt, dass der Spieler auf dem Untergrund stehe
 
 Diese Blockabfolge ist essentiell für das Spiel und läuft konstant, sobald der Spieler springt und auf dem Untergrund landet. 
 
-### Springen 
+### Springen  
 
 Das Springen erfolgt durch das Drücken der Leertaste, Geschwindigkeit Y wird dann auf 13 gesetzt und der Spieler bewegt sich 13 Y Koordinaten nach unten. Wenn er den höchsten Punkt erreicht hat, wird die Geschwindigkeit y um die Schwerkraft, die -1 beträgt gesenkt und der Spieler fällt, bis er den grünen Boden berührt. Damit der Spieler nicht unendlich hoch springen kann, benutzen wir eine Variable, die sich Fallen nennt. Je weiter sich der Spieler vom Untergrund entfernt, desto höher wird die Variable, wenn er diesen berührt ist Fallen = 0. Wenn die Fallen Variable = 3 ist ein Sprung möglich, da der Spieler sich dann sehr nah am Boden befindet. Um das Spiel ein wenig schwieriger zu machen muss man die Leertaste jedes mal neu drücken, um zu springen. Dies passiert aufgrund der Variable Sprung Leertaste, die gleich 1 gesetzt wird wenn die Leertaste gedrückt wird. Ein Sprung ist nur dann möglich wenn diese Variable = 0 ist.
 
@@ -74,7 +74,7 @@ Der Spieler bewegt sich nach der Variable Geschwindigkeit x nach rechts und link
 
 Wie auch bei der Geschwindigkeit y ergibt sich die X-Koordinate, wenn man die gesamte Distanz, die man sich bewegt durch die Anzahl der Schritte teilt.
 
-### Herzen 
+### Herzen  
 Der Spieler beginnt das Spiel mit 3 Herzen, wenn er von einem beispielsweise von einem Stacheln berührt wird, verliert er ein halbes Herz. Wenn er keine Herzen mehr hat, verschwindet der Spieler per "Ghosteffect" und das Spiel wird neu gestartet. Der Spieler landet wieder im ersten Level und fällt auf den Boden. 
 
 ![volles Leben](https://user-images.githubusercontent.com/88385824/163709275-7b2d031c-6713-46d9-ae67-75d7e39b3a06.PNG)
@@ -93,7 +93,7 @@ Sobald der Spieler keine Leben mehr hat, wird die "Message" "beende Spiel" "gebr
 
 "Beginne Spiel" ist die Nachricht, die auch ausgeführt wird, wenn man die grüne Flagge drückt. 
 
-## verschiedene Level
+## verschiedene Level <a name= "verschiedeneLevel">
 
 ### Level 1
 Das Spiel beginnt im ersten Level und diesen erscheint direkt nach Drücken der grünen Flagge. Der Spieler muss auf einen grünen Block springen, hierbei muss er aufpassen, dass er den grünen Klumpen nicht berührt, da dieser ein Gegner ist und ihm Schaden macht. Außerdem sollte er nicht in die Stacheln treten, da diesem ihm auch Schaden zufügen. 
