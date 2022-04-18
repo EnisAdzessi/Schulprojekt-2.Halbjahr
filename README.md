@@ -303,7 +303,7 @@ Der Schlüssel ist notwendig um durch die Tür zu kommen und das Spiel zu beende
 
 ![Schlüssel Code](https://user-images.githubusercontent.com/88385824/163734985-20765c21-54e8-42d3-861f-e9954aef5bc1.PNG)
 
-#### Siegesmenü
+### Ende des Spiels <a name= "EndedesSpiels">
 Wenn der Spieler den Schlüssel eingesammelt hat und durch die Tür geht hat er das Spiel geschafft. Im Siegesmenü wird ihm gratuliert und er kann das Spiel von vorne starten, indem er auf den "Spiele nochmal" Button klickt. Wenn der Mauszeiger sich auf diesem befindet ändern sich dessen Farbe.
 
 ![gb3twbwz (1)](https://user-images.githubusercontent.com/88385824/163735047-a0490b74-b40c-4b12-bd9b-da3cfe7c7640.gif)
