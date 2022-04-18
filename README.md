@@ -266,7 +266,7 @@ Wie zu erkennen ist, ist dies die eigentliche Tür. Die braune Tür ist kein eig
 ![Tür schlüssel code](https://user-images.githubusercontent.com/88385824/163731690-0cc2576c-4fcc-44dd-b42f-bd89d7a15e7b.PNG)
 
 #### Wechsel zum Level 5
-Sobald der Spieler den äußersten Rand in postiver Y-Richtung erreicht wird seine Position in die niedrigste Y-Koordinate den nächsten Levels geändert, da sich das fünfte Level über dem vierten befindet. Wenn der Spieler die Y-Koordinate 185 erreicht wird die Hintergrund Variable auf 14 gesetzt, wodurch das fünfte Level ausgewählt ist. Wir wählten die Nummer 14, da wir zunächst mehrere Level machen wählten, die sich über anderen befinden, für diese Level wollten wir 10 Potenzen benutzen, also 14, 15 etc. , wir schafften dies  allerdings nicht mehr bis zur Fertigstellung.
+Sobald der Spieler den äußersten Rand in postiver Y-Richtung erreicht wird seine Position in die niedrigste Y-Koordinate den nächsten Levels geändert, da sich das fünfte Level über dem vierten befindet. Wenn der Spieler die Y-Koordinate 185 erreicht wird die Hintergrund Variable auf 14 gesetzt, wodurch das fünfte Level ausgewählt ist. Wir wählten die Nummer 14, da wir zunächst mehrere Level machen wollten, die sich über anderen befinden. Für diese Level wollten wir  Zehnerschitte nutzen, also 14, 15 etc. , wir schafften die anderen Level allerdings nicht mehr bis zur Fertigstellung des Projekts.
 
 ![Level 5 Hintergrund](https://user-images.githubusercontent.com/88385824/163733401-4ba5558f-4053-4056-a54a-37c7aebd7797.PNG)
 
